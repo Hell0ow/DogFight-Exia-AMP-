@@ -1,9 +1,23 @@
 package jpu2016.gameframe;
 
-public class GamePanel {
+import java.awt.Graphics;
+import java.util.Observable;
+import java.util.Observer;
 
-	public GamePanel() {
-		// TODO Auto-generated constructor stub
+import javax.swing.JPanel;
+
+public class GamePanel extends JPanel implements Observer {
+
+	public GamePanel(IGraphicsBuilder graphicBuilder) {
+		
+	}
+	
+	public void update(Observable observable) {
+		
+	}
+	
+	public void paintComponent(Graphics graphic) {
+		
 	}
 
 }

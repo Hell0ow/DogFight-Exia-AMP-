@@ -1,9 +1,22 @@
 package jpu2016.dogfight.view;
 
-public class EventPerformer {
+import java.awt.event.KeyEvent;
 
-	public EventPerformer() {
-		// TODO Auto-generated constructor stub
+import jpu2016.dogfight.controller.UserOrder;
+import jpu2016.gameframe.IEventPerformer;
+
+public class EventPerformer implements IEventPerformer {
+
+	public EventPerformer(IOrderPerform orderPerform) {
+		
+	}
+	
+	public void eventPerform(KeyEvent keyCode) {
+		
+	}
+	
+	private UserOrder keyCodeToUserOrder(int keyCode){
+		
 	}
 
 }
