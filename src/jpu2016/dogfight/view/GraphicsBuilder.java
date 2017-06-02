@@ -20,8 +20,6 @@ public class GraphicsBuilder implements IGraphicsBuilder {
 	
 	public void applyModelToGraphic(Graphics graphics, ImageObserver observer) {
 		graphics.drawString(); 
-		graphics.drawString();
-		graphics.drawString();
 	}
 	
 	private void buildEmptySky() {
