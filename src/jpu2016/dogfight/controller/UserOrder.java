@@ -2,8 +2,8 @@ package jpu2016.dogfight.controller;
 
 public class UserOrder implements IUserOrder {
 	
-	protected int player;
-	protected Order order;
+	public int player;
+	public Order order;
 
 	//CONTRUCTOR
 	public UserOrder(int player, Order order) {
@@ -19,10 +19,5 @@ public class UserOrder implements IUserOrder {
 	public Order getOrder(){
 		return order;
 	}
-	
-	
-
-	
-	
-	
+		
 }
