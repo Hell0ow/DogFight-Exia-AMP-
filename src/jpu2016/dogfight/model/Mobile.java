@@ -14,7 +14,7 @@ public class Mobile implements IMobile {
 		this.dimension = dimension;
 		this.direction = direction;
 		this.position = position;
-		this.images = new Image[4];
+		images = new Image[4];
 	}
 	
 	public Direction getDirection() {
