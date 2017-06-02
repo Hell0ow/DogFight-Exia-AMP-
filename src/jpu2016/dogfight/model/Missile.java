@@ -38,6 +38,10 @@ public class Missile extends Mobile {
 		}
 		
 		distanceTraveled += speed;
+		
+		if (distanceTraveled >= MAX_DISTANCE_TRAVELED) {
+			
+		}
 	}
 	
 	public boolean isWeapon() {
