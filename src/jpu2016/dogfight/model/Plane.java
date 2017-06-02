@@ -1,5 +1,5 @@
 package jpu2016.dogfight.model;
 
-public class Plane {
+public class Plane extends Mobile {
 
 }

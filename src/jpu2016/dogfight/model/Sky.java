@@ -1,5 +1,5 @@
 package jpu2016.dogfight.model;
 
-public class Sky {
+public class Sky implements IArea{
 
 }

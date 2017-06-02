@@ -1,5 +1,7 @@
 package jpu2016.dogfight.model;
 
-public class DogfightModel {
+import java.util.Observable;
+
+public class DogfightModel extends Observable {
 
 }
