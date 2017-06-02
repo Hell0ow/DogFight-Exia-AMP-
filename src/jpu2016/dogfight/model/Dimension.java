@@ -24,7 +24,7 @@ public class Dimension {
 	}
 
 	public int getWidth() {
-		return this.width;
+		return width;
 	}
 
 	public void setWidth(int width) {
@@ -41,7 +41,7 @@ public class Dimension {
 	}
 
 	public int getHeight() {
-		return this.height;
+		return height;
 	}
 
 	public void setHeight(int height) {
