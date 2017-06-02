@@ -22,7 +22,7 @@ public class GameFrame extends JFrame implements KeyListener {
 		this.setVisible(true);
 		final GamePanel gamePanel = new GamePanel(new GraphicsBuilder(dogfightModel)); 
 		this.setContentPane(gamePanel); 
-		this.setSize((dogfightModel.getGlobalWidth() * 5) + this.getInsets().left + this.getInsets().right, (dogfightModel.getGlobalHeight() * 5) + this.getInsets().top + this.getInsets().bottom); 
+		this.setSize((dogfightModel.getWidth() * 5) + this.getInsets().left + this.getInsets().right, (dogfightModel.getHeight() * 5) + this.getInsets().top + this.getInsets().bottom); 
 		this.setLocationRelativeTo(null);
         this.setVisible(true);
 	}

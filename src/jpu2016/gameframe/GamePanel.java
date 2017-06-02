@@ -14,20 +14,15 @@ public class GamePanel extends JPanel implements Observer {
 	private final GraphicsBuilder graphicsBuilder;
 
 	public GamePanel(IGraphicsBuilder graphicBuilder) {
-		
+		this.graphicsBuilder = graphicBuilder;
 	}
 	
-	public void update(Observable observable) {
-		
+	public void update(Observable observable, Object arg) {
+		this.repaint();
 	}
 	
 	public void paintComponent(Graphics graphic) {
 		this.graphicsBuilder.applyModelToGraphic(graphic, observer);
-	}
-
-	@Override
-	public void update(Observable o, Object arg) {
-		
 	}
 
 }
