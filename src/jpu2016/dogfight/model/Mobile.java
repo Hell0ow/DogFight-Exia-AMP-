@@ -6,6 +6,7 @@ import java.awt.Image;
 public class Mobile implements IMobile {
 	protected Dimension dimension;
 	protected Direction direction;
+	protected DogfightModel dogfightModel;
 	protected Position position;
 	protected Image[] images;
 	protected int speed;
@@ -14,6 +15,7 @@ public class Mobile implements IMobile {
 		this.dimension = dimension;
 		this.direction = direction;
 		this.position = position;
+		dogfightModel = null;
 		images = new Image[4];
 	}
 	
