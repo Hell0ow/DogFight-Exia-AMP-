@@ -32,7 +32,7 @@ public class DogfightModel extends Observable implements IDogfightModel {
 		return mobiles;
 	}
 	
-	public IMobile getMobilesByPlayer(int player) {
+	public IMobile getMobileByPlayer(int player) {
 		for(int i = 0; i < mobiles.size(); i++) {
 			if (mobiles.get(i).isPlayer(player))
 				return mobiles.get(i);
