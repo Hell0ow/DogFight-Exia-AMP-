@@ -18,7 +18,7 @@ public class EventPerformer implements IEventPerformer {
 	}
 	
 	private UserOrder keyCodeToUserOrder(int keyCode){
-		return new UserOrder(1, NOP);
+		return null;
 	}
 
 }
