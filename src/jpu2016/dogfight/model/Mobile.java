@@ -6,8 +6,8 @@ import java.awt.Image;
 public class Mobile implements IMobile {
 	protected Dimension dimension;
 	protected Direction direction;
-	protected DogfightModel dogfightModel;
 	protected Position position;
+	protected IDogfightModel dogfightModel;
 	protected Image[] images;
 	protected int speed;
 	
@@ -93,11 +93,11 @@ public class Mobile implements IMobile {
 	}
 	
 	public IDogfightModel getDogfightModel() {
-		return new DogfightModel(); /*TO COMPLETE*/
+		return dogfightModel;
 	}
 	
 	public void setDogfightModel(IDogfightModel dogfightModel) {
-		/*TO COMPLETE*/
+		this.dogfightModel = dogfightModel;
 	}
 	
 	public boolean hit() {
