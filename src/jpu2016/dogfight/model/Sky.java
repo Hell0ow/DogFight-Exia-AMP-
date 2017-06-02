@@ -16,6 +16,6 @@ public class Sky implements IArea{
 	}
 	
 	public Image getImage() {
-		return null; /*TO COMPLETE*/
+		return image;
 	}
 }
