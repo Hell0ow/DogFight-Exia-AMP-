@@ -13,7 +13,7 @@ public class DogfightView implements IViewSystem, Runnable {
 		
 	}
 	
-	public void run() {
+	private void run() {
 		
 	}
 	
