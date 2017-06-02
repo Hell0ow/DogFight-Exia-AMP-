@@ -2,4 +2,4 @@
 Java, jeux DogFight 
 CESI EXIA
 
-J'aime le chocolat.
+J'aime le chocolat blanc.
