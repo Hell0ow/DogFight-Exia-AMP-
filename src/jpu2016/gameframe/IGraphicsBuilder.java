@@ -7,6 +7,6 @@ public interface IGraphicsBuilder {
 	
 	public void applyModelToGraphic(Graphics graphics, ImageObserver Observer);
 	public int getGlobalWidth();
-	public int getGlobalHeighht();
+	public int getGlobalHeight();
 	
 }
