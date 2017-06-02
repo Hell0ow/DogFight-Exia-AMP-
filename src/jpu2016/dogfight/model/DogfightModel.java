@@ -8,7 +8,8 @@ public class DogfightModel extends Observable implements IDogfightModel {
 	private Sky sky;
 	
 	public DogfightModel() {
-		sky = new Sky(new Dimension(1, 1)); /*TO COMPLETE*/
+		sky = new Sky(new Dimension(1, 1));
+		mobiles = new ArrayList<IMobile>();
 	}
 	
 	public IArea getArea() {
@@ -20,11 +21,11 @@ public class DogfightModel extends Observable implements IDogfightModel {
 	}
 	
 	public void addMobile(IMobile mobile) {
-		/*TO COMPLETE*/
+		mobiles.add(mobile);
 	}
 	
 	public void removeMobile(IMobile mobile) {
-		/*to complete*/
+		mobiles.remove(mobile);
 	}
 	
 	public ArrayList<IMobile> getMobiles() {
@@ -32,7 +33,12 @@ public class DogfightModel extends Observable implements IDogfightModel {
 	}
 	
 	public IMobile getMobilesByPlayer(int player) {
-		return new Mobile(null, new Position(1, 1, 1, 1), new Dimension(1, 1), 1, "String");
+		for(int i = 0; i < mobiles.size(); i++) {
+			if (mobiles.get(i).isPlayer(player))
+				return mobiles.get(i);
+		}
+		
+		return null;
 	}
 	
 	public void setMobilesHavesMove() {
