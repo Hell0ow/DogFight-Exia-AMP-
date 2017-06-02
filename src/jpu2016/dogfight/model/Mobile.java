@@ -91,7 +91,7 @@ public class Mobile implements IMobile {
 	}
 	
 	public IDogfightModel getDogfightModel() {
-		/*TO COMPLETE*/
+		return new DogfightModel(); /*TO COMPLETE*/
 	}
 	
 	public void setDogfightModel(IDogfightModel dogfightModel) {
