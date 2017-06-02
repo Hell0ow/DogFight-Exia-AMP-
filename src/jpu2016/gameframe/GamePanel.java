@@ -22,7 +22,7 @@ public class GamePanel extends JPanel implements Observer {
 	}
 	
 	public void paintComponent(Graphics graphic) {
-		this.graphicsBuilder.applyModelToGraphic(graphic, observer);
+		this.graphicsBuilder.applyModelToGraphic(graphic, );
 	}
 
 }
