@@ -3,6 +3,7 @@ import jpu2016.dogfight.model.DogfightModel;
 import jpu2016.dogfight.model.IDogfightModel;
 import jpu2016.dogfight.model.IMobile;
 import jpu2016.dogfight.model.Missile;
+import jpu2016.dogfight.model.Mobile;
 import jpu2016.dogfight.view.IViewSystem;
 
 
@@ -25,6 +26,8 @@ public class DogfightController implements IOrderPerformer {
 	}
 	
 	private void launchMissile(int player){
+		IMobile plane = dogfightModel.getMobileByPlayer(player);
+		dogfightModel.addMobile(new Missile(plane.getDirection(), plane.getPosition()));
 	}
 	
 	private void gameLoop(){
